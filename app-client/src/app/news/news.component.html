@@ -1,0 +1,15 @@
+<div class="container">
+    <hr>
+    <div class="news">
+        <div class="new" *ngFor="let item of news">
+            <img src="../../assets/img/{{item.img}}" alt="...">
+
+            <div class="current_new">
+                <h5>{{item.title}}</h5>
+                <span class="description">{{item.description}}</span>
+                <span class="date"> - {{item.date}}</span>
+                <p class="content">{{item.content}}</p>
+            </div>
+        </div>
+    </div>
+</div>

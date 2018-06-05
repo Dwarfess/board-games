@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Catan",
+    "description": "Picture yourself in the era of discoveries: After a long voyage of great deprivation, your ships have finally reached the coast of an uncharted island. Its name shall be Catan! But you are not the only discoverer. Other fearless seafarers have also landed on the shores of Catan: The race to settle the island has begin! ",
+    "price": 38.19,
+    "img":"game1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Flash Point",
+    "description": "Flash Point: Fire Rescue is a fully cooperative game, everyone plays on the same firefighting team - win or lose together. Every turn is filled with the tension of having to fight the fire back rescuing victims or investigating points of interest. Players can ride the ambulance to safety or fire the engine's deck gun in a desperate attempt to control the blaze. ",
+    "price": 40.31,
+    "img":"game2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Lords of Waterdeep",
+    "description": "Waterdeep, the City of Splendors--the most resplendent jewel in the Forgotten Realms, and a den of political intrigue and shady back-alley dealings. In this game, the players are powerful lords vying for control of this great city. Its treasures and resources are ripe for the taking, and that which cannot be gained through trickery and negotiation must be taken by force",
+    "price": 52.17,
+    "img":"game3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Stone Age",
+    "description": "The Dawn of Mankind. Our ancestors were hard workers, resting only very little. Luckily for us, their ingenuity allowed them to make their work easier, day after day. In Stone Age, players are sent back to that arduous period of history. With tools, quite archaic at first, you will be able to collect wood, stone and gold.",
+    "price": 19.88,
+    "img":"game4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Pandemic ",
+    "description": "Four diseases have broken out in the world and it is up to a team of specialists in various fields to find cures for these diseases before mankind is wiped out. Players must work together playing to their characters' strengths and planning their strategy of eradication before the diseases overwhelm the world with ever-increasing outbreaks. For example the Operation Specialist can build research stations which are needed to find cures for the diseases.",
+    "price": 82.99,
+    "img":"game5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Sequence Game",
+    "description": "It's fun, it's challenging, it's exciting, it's Sequence! Play a card from your hand, and place a chip on a corresponding space on the game board. When you have five in a row, it's a Sequence. Learn to block your opponents or remove their chips, and watch out for the Jacks - they're wild! With a little strategy and luck, you'll be a winner. Contents: Folding Game Board, 2 Decks of Sequence Cards, 135 Playing Chips and Instructions. For 2-12 players, ages 7 and up. ",
+    "price": 24.55,
+    "img":"game6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Asmodee Splendor ",
+    "description": "As a wealthy Renaissance merchant, acquire mines and transportation, hire artisans and woo the nobility. Create the most fantastic jewelry to become the best-known merchant of them all! Acquire precious stones to trade them for development cards. Use development cards to acquire more gem stones. Use your gems and gold to create the most fantastic jewelry, and appeal to the nobles to gain the prestige you need to win.",
+    "price": 67.15,
+    "img":"game7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Scattergories",
+    "description": "Team up to be creative in this party game where being different counts! In the Scattergories game, teams come up with answers that fit the categories listed on their card. Sounds easy, but the answers need to start with the letter rolled on the die! Come up with as many answers as you can before time runs out, but be creative – your team only gets points if no other team has the same answer. ",
+    "price": 12.79,
+    "img":"game8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Escape the Room",
+    "description": "A Party Event for Gatherings of 3 to 8 The Mystery: The year is 1913 and you are the lucky winner of a free stay at Foxcrest Retreat, where the famed Dr. Gravely has improved upon the latest in spa treatments and relaxation for those of high social standing. You take a long all-expense-paid train ride to the retreat. Upon your arrival, however, you and your fellow guests may find the 'health retreat' is not what it seems... ",
+    "price": 26.11,
+    "img":"game9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Cities of Splendor",
+    "description": "Cities of splendor introduces four complete expansions to the splendor base game, each accentuating and highlighting a different aspect of the original game. Towers allow players to reserve additional cards, special powers introduce a new layer of engine building, cities give players a new goal to strive towards, and a range of exciting development cards add spice to any game. Each of these four expansions offers a completely unique approach to the game of splendor without compromising the game’s original elegance. ",
+    "price": 40.63,
+    "img":"game10.jpg"
+  }
+]

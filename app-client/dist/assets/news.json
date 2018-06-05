@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "The Apocalypse is heading to Clank! In! Space!",
+    "description": "Gaming Trend ",
+    "date": "2018-05-21",
+    "content":"Last year Renegade Game Studios was able to surprise almost everyone at Gen Con when they released Clank! In! Space!, a sci-fi spinoff of the original Clank! While Clank! has already received two expansions, we haven’t seen anything for the sequel. That wait will be ending soon, as the Apocalypse is coming. Renegade Game Studios ",
+    "img":"news1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "New Stranger Things releases from Hasbro! ",
+    "description": "ACD Distribution Newsline ",
+    "date": "2018-05-22",
+    "content":"Release Date: May 2018HSBC4550Monopoly: Stranger ThingsIn this Monopoly game inspired by the Netflix Original Series, Stranger Things, Will Byers has gone missing. Players choose an 80s-inspired token or one 'ripped from the Upside Down' to move around the board trying to find him.Search the town of Hawkins and buy, sell, and trade locations and vehicles from the show.",
+    "img":"news2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Feudum Review",
+    "description": "Board Game Quest",
+    "date": "2018-05-22",
+    "content":"Board game complexity comes in a lot of flavors. There are complex rules that are just hard to understand. There are complex scoring systems that make it difficult to understand what you are trying to actually accomplish. And then there is the complexity in Feudum, which has a lot of individually simple rules",
+    "img":"news3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Story Behind the Games",
+    "description": "The Daily Worker Placement",
+    "date": "2018-05-26",
+    "content":"Board games are breaking into the mainstream more and more, but there are still relatively few non-fiction books that look at the hobby. In the past we’ve covered etiquette manuals and photo books, but a new project by Erin Dean has really piqued our interest. She has spent the last several months talking to designers",
+    "img":"news4.jpg"
+  }
+]

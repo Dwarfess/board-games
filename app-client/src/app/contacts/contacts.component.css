@@ -1,0 +1,54 @@
+.contacts {
+  margin-top: 30px;
+}
+.contacts:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.contacts .map {
+  width: 100%;
+  height: 600px;
+  background: url("../../assets/img/map.jpg") no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  float: right;
+}
+.contacts .contact {
+  padding-top: 30px;
+  float: left;
+}
+.contacts .contact h2 {
+  font-weight: bold;
+  color: #666666;
+}
+.contacts .contact div {
+  margin-top: 30px;
+}
+.contacts .contact div h5 {
+  color: #666666;
+  font-weight: bold;
+}
+hr {
+  margin: 0;
+  height: 10px;
+  background-color: #17a2b8;
+}
+/*rules*/
+@media screen and (max-width: 992px) {
+  .menu {
+    position: static !important;
+  }
+}
+/*my mixings*/
+.after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

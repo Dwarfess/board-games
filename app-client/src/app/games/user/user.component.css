@@ -1,0 +1,101 @@
+.aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 15px;
+  padding: 0 0 0 15px;
+}
+.aside .logForm,
+.aside .updateForm,
+.aside .cart {
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #17a2b8 !important;
+}
+.aside .logForm input,
+.aside .updateForm input,
+.aside .cart input,
+.aside .logForm select,
+.aside .updateForm select,
+.aside .cart select {
+  box-shadow: none !important;
+  border: 1px solid #17a2b8 !important;
+}
+.aside .logForm button,
+.aside .updateForm button,
+.aside .cart button {
+  box-shadow: none !important;
+  margin: 5px;
+}
+.aside .cart .login {
+  margin-top: 10px;
+}
+.aside .cart .login:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.aside .cart .login .userName {
+  margin-left: 5px;
+  display: inline-table;
+  float: left;
+}
+.aside .cart .login .userName span {
+  font-weight: bold;
+  cursor: pointer;
+}
+.aside .cart .login .userName span:hover {
+  text-decoration: underline;
+}
+.aside .cart .login button {
+  float: right;
+  margin-top: -10px;
+}
+.aside .cart p {
+  padding: 0 20px;
+  text-align: center;
+}
+.aside .cart li i {
+  font-size: 180%;
+  float: right;
+  margin-top: -5px;
+}
+.aside .cart li input {
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  font-size: 20px;
+  background: none;
+  cursor: pointer;
+  float: right;
+  color: #666666;
+  border: 1px solid #666666;
+}
+/*for error*/
+.ng-valid[required],
+.ng-valid.required {
+  border-bottom: 3px solid mediumseagreen;
+}
+.ng-untouched[required] {
+  border: 1px solid gainsboro;
+  box-shadow: none !important;
+}
+.ng-invalid:not(form) {
+  border-bottom: 3px solid red;
+}
+input:focus {
+  border: 1px solid grey;
+}
+.alert-danger {
+  text-align: center;
+}
+/*my mixings*/
+.after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

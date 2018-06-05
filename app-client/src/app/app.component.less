@@ -1,0 +1,106 @@
+@firstColor: #17a2b8;
+@secondColor: #666666;
+@thirdColor: #eee;
+
+footer{
+  p{
+    margin-top: calc(100vh + 10px);
+    padding:10px;
+    margin:20px 0 0 0;
+    font-size:80%;
+  }
+}
+
+button{
+  box-shadow:none !important;
+}
+
+.header{
+  margin:0;
+  padding:0;
+  background-color: @firstColor;
+  border-top:1px solid @firstColor;
+
+  .top{
+    width:100%;
+    margin-top:10px;
+    background-color: #ffffff;
+    &:after{
+      .after;
+    }
+
+    .navbar{
+      padding-top:0;
+      padding-bottom:0;
+      background-color: white !important;
+      position:relative;
+
+      .logo{
+        width:250px;
+        height:84px;
+        margin:0;
+        padding:0;
+        .bg("logo.png");
+      }
+
+      .menu{
+        position:absolute;
+        bottom:0;
+        right:10px;
+
+        ul{
+          li{
+            padding-left:20px;
+            a{
+              text-transform: uppercase;
+              color:@secondColor;
+              &:hover{color:@firstColor}
+              &:active{color:@firstColor!important;}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/*rules*/
+@media screen and (max-width: 992px){
+  .menu{
+    position: static !important;
+  }
+}
+
+/*my mixings*/
+.after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.divAbs(@top: 0; @left: 0) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: @top;
+  margin-left: @left;
+}
+
+.bg(@url; @r: no-repeat; @s: cover; @a: scroll) {
+  background: url(@url) @r top center @a;
+  -webkit-background-size: @s;
+  -moz-background-size: @s;
+  -o-background-size: @s;
+  background-size: @s;
+}
+
+.br(@font: 1px; @color: @firstColor) {
+  border: @font solid @color !important;
+}

@@ -1,0 +1,137 @@
+.search {
+  background-color: #17a2b8;
+}
+.search form {
+  width: 100%;
+  display: inline-block;
+  margin: 10px auto;
+  border-radius: 5px;
+  background: white;
+  padding: 0 10px 0 15px;
+  line-height: 0;
+}
+.search form input,
+.search form select,
+.search form button {
+  border: none;
+  outline: inherit;
+  background: none;
+  font-size: 120%;
+  padding: 5px;
+}
+.search form input {
+  width: 90%;
+  display: inline-table;
+}
+.search form select {
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  color: grey;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.search form button {
+  float: right;
+  padding: 0;
+  cursor: pointer;
+  color: #666666;
+}
+.search form button:active {
+  color: #333333;
+}
+.search form button i {
+  margin-top: 5px;
+}
+.games {
+  margin: 10px 0;
+  padding: 5px 2px 5px 15px;
+}
+.games .item {
+  margin-right: 0px;
+  border-radius: 5px;
+  padding: 2px;
+  border: 1px solid #17a2b8 !important;
+}
+.games .item:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.games .item .img {
+  padding: 5px;
+  float: left;
+}
+.games .item .info {
+  width: 65%;
+  float: left;
+  padding: 5px;
+}
+.games .item .info input,
+.games .item .info textarea {
+  border: 1px solid #17a2b8 !important;
+}
+.games .item .info .price {
+  margin-top: 15px;
+}
+.games .item .info .price:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.games .item .info .price span {
+  font-weight: bold;
+}
+.games .item .info .price button {
+  margin-top: -10px;
+  padding-bottom: 0;
+  float: right;
+}
+.games .item .info .admin-panel {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+.games .item .info .admin-panel:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.games .item .info .admin-panel button {
+  margin: -8px 0 2px 5px;
+  padding-bottom: 0;
+  float: right;
+}
+.games .add-game {
+  margin-top: 2px;
+  padding: 15px 25px 5px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #17a2b8 !important;
+}
+.games .add-game:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.games .add-game button {
+  margin: -8px 0 2px 5px;
+  padding-bottom: 0;
+  float: right;
+}
+/*my mixings*/
+.after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

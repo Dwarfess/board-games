@@ -1,0 +1,120 @@
+<div class="aside col-4 col-lg-3">
+    <form class="logForm panel" *ngIf="showLogForm" [formGroup] = "logForm" novalidate>
+        <div class="well">
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input id="email" type="email" class="form-control" formControlName="email" placeholder="name@address.com" required />
+
+                <div *ngIf="formErrors.email" class="alert alert-danger">
+                    {{ formErrors.email }}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input id="password" type="password" class="form-control" formControlName="password" required/>
+
+                <div *ngIf="formErrors.password" class="alert alert-danger">
+                    {{ formErrors.password }}
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-info btn-sm" [disabled]="!logForm.valid" (click)="show(false,true,false,'log')">
+                Log in
+            </button>
+
+        </div>
+    </form>
+
+    <form class="updateForm panel" *ngIf="showUpdateForm" [formGroup] = "updateForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="well">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input id="name" type="text" class="form-control" formControlName="name" required />
+
+                <div *ngIf="formErrors.name" class="alert alert-danger">
+                    {{ formErrors.name }}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input id="email" type="email" class="form-control" formControlName="email" placeholder="name@address.com" required />
+
+                <div *ngIf="formErrors.email" class="alert alert-danger">
+                    {{ formErrors.email }}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input id="password" type="password" class="form-control" formControlName="password" required/>
+
+                <div *ngIf="formErrors.password" class="alert alert-danger">
+                    {{ formErrors.password }}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input id="phone" type="text" class="form-control" formControlName="phone" placeholder="+38 (099) 999 99 99"/>
+
+                <div *ngIf="formErrors.phone" class="alert alert-danger">
+                    {{ formErrors.phone }}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Role *</label>
+                <select id="role" class="form-control" formControlName="role" (change)="checkAdmin()" required >
+                    <option *ngFor="let r of roles" [value]="r">{{r}}</option>
+                </select>
+
+                <div *ngIf="formErrors.role" class="alert alert-danger">
+                    {{ formErrors.role }}
+                </div>
+            </div>
+
+            <div class="form-group" *ngIf="checkAdminCode">
+                <label for="code">Code *</label>
+                <input id="code" type="text" class="form-control" formControlName="code" required />
+
+                <div *ngIf="formErrors.code" class="alert alert-danger">
+                    {{ formErrors.code }}
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-info btn-sm" [disabled]="!updateForm.valid" (click)="show(false,true,false,'update')">
+                Accept
+            </button>
+
+            <button type="button" class="btn btn-danger btn-sm" (click)="show(false,true,false,'cancel')">
+                Cancel
+            </button>
+        </div>
+    </form>
+
+
+    <div class="cart" *ngIf="showCart">
+        <div class="login">
+            <h6 class="userName">Hello, <span (click)="show(false,false,true,'updateForm')">{{user.name}}</span></h6>
+            <button class="btn btn-outline-info btn-sm" (click)="show(true,false,false, 'logout')">Log out</button>
+        </div>
+        <p>You can change your current account, click to your name</p>
+
+        <div class="list-group">
+            <li href="#" class="list-group-item list-group-item-info">
+                Shopping cart
+                <i class="material-icons">shopping_cart</i>
+            </li>
+            <li class="list-group-item" *ngFor="let item of itemList">
+                {{item.title}}
+                <input type="button" value="✖" (click)="deleteItem(item)">
+            </li>
+        </div>
+    </div>
+</div>
+
+
+

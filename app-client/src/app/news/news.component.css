@@ -1,0 +1,42 @@
+.news {
+  margin-top: 20px;
+}
+.news .new {
+  margin: 10px 0;
+  padding: 15px 0;
+  border-bottom: 2px solid #17a2b8;
+}
+.news .new:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.news .new img {
+  float: left;
+  width: 25%;
+}
+.news .new .current_new {
+  padding-left: 1%;
+  width: 70%;
+  float: left;
+}
+.news .new .current_new h5,
+.news .new .current_new .description {
+  font-weight: bold;
+  color: #666666;
+}
+hr {
+  margin: 0;
+  height: 10px;
+  background-color: #17a2b8;
+}
+/*my mixings*/
+.after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

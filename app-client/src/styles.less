@@ -1,0 +1,135 @@
+
+body{
+  margin:0;
+  padding:0;
+  font-size: 16px;
+}
+
+
+/*rules*/
+@media screen and (max-width: 991px){
+  body{
+    p, label, li, .alert {font-size: 90% !important;}
+    a {font-size: 100% !important;}
+
+    li{
+      input{font-size:120% !important;}
+    }
+
+    h2,h3,h4{font-size: 140% !important;}
+    h5,h6{font-size: 100% !important;}
+
+    //i{font-size: 100% !important;}
+
+    button, input, select{
+      font-size:80% !important;
+    }
+
+    .search{input{padding-top:10px !important;}}
+
+    footer {p{font-size: 70% !important;}}
+  }
+}
+
+@media screen and (max-width: 767px){
+  //p{color:darkgoldenrod !important;}
+  body{
+   .aside{
+     .login{
+       text-align: center !important;
+       button{float:none !important;}
+       h6{
+         float:none !important;
+         margin-bottom:20%;
+       }
+     }
+
+     li{
+       padding:5% !important;
+       font-size:80% !important;
+     }
+   }
+  }
+}
+
+@media screen and (max-width: 720px){
+  //p{color:green !important;}
+}
+
+@media screen and (max-width: 640px){
+  //p{color:red !important;}
+}
+
+@media screen and (max-width:540px){
+  //p{color:deeppink !important;}
+  body{
+    p, label, li, .card-body, .alert{font-size: 80% !important;}
+
+    li{
+      input{font-size:100% !important;}
+    }
+
+    h2,h3,h4{font-size: 120% !important;}
+    h5,h6{font-size: 90% !important;}
+
+    //i{font-size: 100% !important;}
+
+    button, input, select{
+      font-size:80% !important;
+    }
+
+    .aside{
+      li{
+        padding:5% !important;
+        font-size:70% !important;
+      }
+    }
+
+    footer {p{font-size: 60% !important;}}
+  }
+}
+
+@media screen and (max-width: 480px){
+  //p{color:mediumpurple !important;}
+}
+
+@media screen and (max-width: 320px){
+  //p{color:aqua !important;}
+
+  .logo{
+    width:150px !important;
+    height:50px !important;
+  }
+  .games{
+    width:50% !important;
+    flex:none !important;
+
+    .info{
+      width:100% !important;
+    }
+    .card-body{
+      padding:5px;
+    }
+
+    .btn{
+      margin:0 2px !important;
+      padding:1px 5px !important;
+      i{font-size: 140%;}
+    }
+
+    .price, .admin-panel{
+      margin:0;
+      font-size: 90% !important;
+    }
+  }
+
+  .aside{
+    max-width:50% !important;
+    flex:none !important;
+
+    .cart{
+      p{padding:0 5px !important;}
+    }
+  }
+
+}

@@ -1,0 +1,151 @@
+@firstColor: #17a2b8;
+@secondColor: #666666;
+@thirdColor: #eee;
+
+.search{
+  background-color: @firstColor;
+  form {
+    width: 100%;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: white;
+    padding: 0 10px 0 15px;
+    line-height: 0;
+
+    input, select, button {
+      border: none;
+      outline: inherit;
+      background: none;
+      font-size: 120%;
+      padding: 5px;
+    }
+
+    input {
+      width:90%;
+      display: inline-table;
+    }
+
+    select {
+      border-right: 1px solid grey;
+      border-left: 1px solid grey;
+      color: grey;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    button {
+      float: right;
+      padding: 0;
+      cursor: pointer;
+      color: @secondColor;
+      &:active {
+        color: darken(@secondColor, 20%)
+      }
+      i {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.games{
+  margin:10px 0;
+  padding:5px 2px 5px 15px;
+
+  .item{
+    margin-right:0px;
+    border-radius: 5px;
+    padding:2px;
+    .br;
+    &:after{.after}
+
+    .img{
+      padding:5px;
+      float:left;
+    }
+
+    .info{
+      width:65%;
+      float:left;
+      padding:5px;
+
+      input, textarea{
+        .br;
+      }
+
+      .price{
+        margin-top:15px;
+        &:after{.after}
+        span{
+          font-weight: bold;
+        }
+
+        button{
+          margin-top:-10px;
+          padding-bottom:0;
+          float:right;
+        }
+      }
+      .admin-panel{
+        margin-top:10px;
+        padding-top:8px;
+        border-radius: 5px;
+        &:after{.after}
+
+        button{
+          margin:-8px 0 2px 5px;
+          padding-bottom:0;
+          float:right;
+        }
+      }
+    }
+  }
+
+
+  .add-game{
+    margin-top:2px;
+    padding:15px 25px 5px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    .br;
+    &:after{.after}
+
+    button{
+      margin:-8px 0 2px 5px;
+      padding-bottom:0;
+      float:right;
+    }
+  }
+}
+
+
+/*my mixings*/
+.after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.divAbs(@top: 0; @left: 0) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: @top;
+  margin-left: @left;
+}
+
+.bg(@url; @r: no-repeat; @s: cover; @a: scroll) {
+  background: url(@url) @r top center @a;
+  -webkit-background-size: @s;
+  -moz-background-size: @s;
+  -o-background-size: @s;
+  background-size: @s;
+}
+
+.br(@font: 1px; @color: @firstColor) {
+  border: @font solid @color !important;
+}

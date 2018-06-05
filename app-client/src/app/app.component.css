@@ -1,0 +1,76 @@
+footer p {
+  margin-top: calc(100vh + 10px);
+  padding: 10px;
+  margin: 20px 0 0 0;
+  font-size: 80%;
+}
+button {
+  box-shadow: none !important;
+}
+.header {
+  margin: 0;
+  padding: 0;
+  background-color: #17a2b8;
+  border-top: 1px solid #17a2b8;
+}
+.header .top {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+.header .top:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.header .top .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white !important;
+  position: relative;
+}
+.header .top .navbar .logo {
+  width: 250px;
+  height: 84px;
+  margin: 0;
+  padding: 0;
+  background: url("logo.png") no-repeat top center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.header .top .navbar .menu {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.header .top .navbar .menu ul li {
+  padding-left: 20px;
+}
+.header .top .navbar .menu ul li a {
+  text-transform: uppercase;
+  color: #666666;
+}
+.header .top .navbar .menu ul li a:hover {
+  color: #17a2b8;
+}
+.header .top .navbar .menu ul li a:active {
+  color: #17a2b8 !important;
+}
+/*rules*/
+@media screen and (max-width: 992px) {
+  .menu {
+    position: static !important;
+  }
+}
+/*my mixings*/
+.after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}

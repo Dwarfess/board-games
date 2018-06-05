@@ -1,0 +1,121 @@
+<div class = "search">
+    <div class="container">
+        <form>
+            <input type="text" placeholder="search game" [(ngModel)]="search" name = "name" #name = "ngModel" (keyup) = "getGames()">
+            <button (click) = "getGames()">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row  position-relative">
+        <app-user (userEvent)="receiveUser($event)"></app-user>
+        <div class="games col-8 col-lg-9">
+            <div class="row">
+                <div class="item col-lg-6" *ngFor="let item of games">
+                    <!--this part of code not for edit-->
+                    <div *ngIf="!item.edit">
+                        <div class="img">
+                            <img src="./assets/img/{{item.img}}" alt="" class="rounded mx-auto d-block">
+                        </div>
+                        <div class="info">
+                            <h4 class="title">{{item.title}}</h4>
+                            <p class="description">This interesting game will help you have fun in any party...
+                                <a class="btn btn-link"data-toggle="collapse" href="#collapse{{item.index}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    more
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapse{{item.index}}">
+                                <div class="card card-body">{{item.description}}</div>
+                            </div>
+                            <div class="price">Price:
+                                <span>${{item.price}}</span>
+                                <button class="add btn btn-info btn-sm" *ngIf="correntUser.role" (click)="addToCart(item)">
+                                    <i class="material-icons">add_shopping_cart</i>
+                                </button>
+                            </div>
+
+                            <div class="admin-panel" *ngIf="correntUser.role=='Administrator'">
+                                <span>Admin options:</span>
+                                <button class="delete btn btn-info btn-sm" (click)="deleteGame(item._id)">
+                                    <i class="material-icons">delete</i>
+                                </button>
+                                <button class="edit btn btn-info btn-sm" (click)="editGame(item)">
+                                    <i class="material-icons">edit</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--this part of code for edit-->
+                    <div *ngIf="item.edit">
+                        <form #editGameForm="ngForm">
+                            <div class="img">
+                            <img src="./assets/img/{{tmpGame.img}}" alt="" class="rounded mx-auto d-block">
+                        </div>
+                            <div class="info">
+                                * <input type="text" [(ngModel)]="tmpGame.title" name = "title" maxlength="20" minlength="3" required >
+                                <p class="description">This interesting game will help you have fun in any party...
+                                </p>
+                                <textarea [(ngModel)]="tmpGame.description" name = "description"></textarea>
+
+
+                                <div class="price">Price:
+                                    <span>
+                                        * <input type="text" [(ngModel)]="tmpGame.price" name = "price" pattern="^\d*\.?\d{2}$" required>
+                                    </span>
+                                </div>
+
+                                <div class="admin-panel">
+                                    <button class="delete btn btn-info btn-sm" (click)="cancelEditGame(item.index)">
+                                        <i class="material-icons">close</i>
+                                    </button>
+                                    <button class="edit btn btn-info btn-sm" (click)="acceptEditGame()" [disabled]="!editGameForm.form.valid">
+                                        <i class="material-icons">check</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!--this part of code for create-->
+                <div *ngIf="correntUser.role=='Administrator'" class="item col-lg-6">
+                    <form #createGameForm="ngForm">
+                        <div class="img">
+                            <img src="./assets/img/{{addGame.img}}" alt="" class="rounded mx-auto d-block">
+                        </div>
+                        <div class="info">
+                            * <input type="text" [(ngModel)]="addGame.title" name = "title" placeholder="Add title..." maxlength="20" minlength="3" required >
+                            <p class="description">This interesting game will help you have fun in any party...
+                            </p>
+
+                            <textarea [(ngModel)]="addGame.description" name = "description" placeholder="Add description..."></textarea>
+
+                            <div class="price">
+                                <span>
+                                    * <input type="text" [(ngModel)]="addGame.price" name = "price" placeholder="Add price..." pattern="^\d*\.?\d{2}$" required>
+                                </span>
+                            </div>
+
+                            <div class="admin-panel">
+                                <button class="delete btn btn-info btn-sm" (click)="cancelAddGame()">
+                                    <i class="material-icons">close</i>
+                                </button>
+                                <button class="edit btn btn-info btn-sm" (click)="acceptAddGame(addGame)" [disabled]="!createGameForm.form.valid">
+                                    <i class="material-icons">check</i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
