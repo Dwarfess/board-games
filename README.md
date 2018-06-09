@@ -1,5 +1,5 @@
 # Web application
-Online board games shop, implemented on Angular 2 + NodeJS<br>
+Online board games shop, implemented on Angular + NodeJS<br>
 
 ## Download & Get started
 1. Open `Git Bash`.
